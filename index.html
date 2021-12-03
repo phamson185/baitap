@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" class="btn">
+            <i class="fas fa-grip-lines"></i>
+        </button>
+
+    <div class="menu">
+        <div class="">
+            <div>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-10 blurred-background"></div>
+    </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('div').hide();
+        $('.btn').click(function() {
+            $('div').show();
+            $('.btn').click(function() {
+                $('.menu').hide();
+            });
+        });
+    });
+</script>
+
+</html>
